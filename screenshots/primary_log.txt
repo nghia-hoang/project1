@@ -1,0 +1,19 @@
+MySQL [udacity]> CREATE TABLE user (id INT NOT NULL,name VARCHAR(30) NOT NULL,PRIMARY KEY (id),UNIQUE (name));
+Query OK, 0 rows affected (0.06 sec)
+
+MySQL [udacity]> INSERT INTO user (id, name) VALUES (1,"Tacos"),(2,"Tomato Soup"),(3,"Grilled Cheese");
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+MySQL [udacity]> select * from user
+    -> ;
++----+----------------+
+| id | name           |
++----+----------------+
+|  3 | Grilled Cheese |
+|  1 | Tacos          |
+|  2 | Tomato Soup    |
++----+----------------+
+3 rows in set (0.01 sec)
+
+MySQL [udacity]>

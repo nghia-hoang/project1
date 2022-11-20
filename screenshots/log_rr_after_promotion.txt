@@ -1,0 +1,19 @@
+MySQL [udacity]> INSERT INTO user (id, name) VALUES (41,"4Tacos");
+ERROR 2006 (HY000): MySQL server has gone away
+No connection. Trying to reconnect...
+Connection id:    8
+Current database: udacity
+
+Query OK, 1 row affected (0.03 sec)
+
+MySQL [udacity]> select * from user
+    -> ;
++----+----------------+
+| id | name           |
++----+----------------+
+| 41 | 4Tacos         |
+|  3 | Grilled Cheese |
+|  1 | Tacos          |
+|  2 | Tomato Soup    |
++----+----------------+
+4 rows in set (0.00 sec)
